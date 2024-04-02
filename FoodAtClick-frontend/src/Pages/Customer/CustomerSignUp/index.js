@@ -51,7 +51,7 @@ const CustomerSignUp = () => {
     }
 
     const signUpCustomer = () => {
-        if(validateInput) {
+        if(validateInput()) {
             const url = `${URL}/customers/signup`;
             const body = {
                 name,
